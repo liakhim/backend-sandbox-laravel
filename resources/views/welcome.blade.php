@@ -56,7 +56,6 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
-                border: 1px solid red;
             }
 
             .m-b-md {
