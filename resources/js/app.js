@@ -14,7 +14,10 @@ const router = new VueRouter({
     routes: [
         {
             path: '/sandbox',
-            component: Sandbox
+            component: Sandbox,
+            meta: {
+                layout: 'admin'
+            }
         }
     ]
 });
