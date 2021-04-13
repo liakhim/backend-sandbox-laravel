@@ -1,11 +1,13 @@
 <template>
     <div>
-        TEST23
+        <Header/>
         <router-view/>
     </div>
 </template>
 <script>
+    import Header from "../components/Global/TheHeader.vue";
     export default {
-        name: 'MainLayout'
+        name: 'MainLayout',
+        components: { Header }
     }
 </script>

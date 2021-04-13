@@ -1,5 +1,5 @@
 import Sandbox from "./pages/Sandbox";
-
+import AdminMain from "./pages/AdminMain";
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
@@ -16,8 +16,15 @@ const router = new VueRouter({
             path: '/sandbox',
             component: Sandbox,
             meta: {
+                layout: 'main'
+            },
+        },
+        {
+            path: '/admin',
+            component: AdminMain,
+            meta: {
                 layout: 'admin'
-            }
+            },
         }
     ]
 });
