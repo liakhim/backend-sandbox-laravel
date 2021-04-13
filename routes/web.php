@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//letter
+Route::get('/letter', function () {
+    return view('letters.letter')->with('src', 'testing');
+});
 
 
 Route::group(['prefix' => 'sandbox'], function(){
