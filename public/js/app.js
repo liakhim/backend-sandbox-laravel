@@ -141,6 +141,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Header'
 });
@@ -226,7 +230,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "ul[data-v-39fd883d] {\n  border: 1px solid red;\n}", ""]);
+exports.push([module.i, "#header .logo[data-v-39fd883d] {\n  width: 180px;\n  padding: 10px;\n  border: 1px solid #cccccc;\n}\n#header .logo img[data-v-39fd883d] {\n  width: 100%;\n}\n#header ul li[data-v-39fd883d] {\n  width: 180px;\n  height: 100%;\n  border: 1px solid #cccccc;\n}", ""]);
 
 // exports
 
@@ -1381,29 +1385,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("ul", [
+  return _c("div", { staticClass: "d-flex", attrs: { id: "header" } }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("ul", { staticClass: "d-flex align-items-center p-0 m-0" }, [
       _c(
         "li",
+        { staticClass: "d-flex align-items-center justify-content-center" },
         [_c("router-link", { attrs: { to: "#" } }, [_vm._v("List Item 1")])],
         1
       ),
       _vm._v(" "),
       _c(
         "li",
+        { staticClass: "d-flex align-items-center" },
         [_c("router-link", { attrs: { to: "#" } }, [_vm._v("List Item 2")])],
         1
       ),
       _vm._v(" "),
       _c(
         "li",
+        { staticClass: "d-flex align-items-center" },
         [_c("router-link", { attrs: { to: "#" } }, [_vm._v("List Item 3")])],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "li",
+        { staticClass: "d-flex align-items-center" },
+        [_c("router-link", { attrs: { to: "admin" } }, [_vm._v("to admin")])],
         1
       )
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo" }, [
+      _c("img", { attrs: { src: __webpack_require__(/*! ../../../assets/AIM.svg */ "./resources/assets/AIM.svg"), alt: "" } })
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -1508,12 +1533,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container" },
-    [_c("router-link", { attrs: { to: "admin" } }, [_vm._v("to admin")])],
-    1
-  )
+  return _c("div", { staticClass: "container" })
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -16802,6 +16822,17 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./resources/assets/AIM.svg":
+/*!**********************************!*\
+  !*** ./resources/assets/AIM.svg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/AIM.svg?da98dd91d11fa3e5f6036d67b41a270e";
+
+/***/ }),
+
 /***/ "./resources/js/App.vue":
 /*!******************************!*\
   !*** ./resources/js/App.vue ***!
@@ -17285,8 +17316,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laravel_dev\projects\backend-sandbox-laravel\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laravel_dev\projects\backend-sandbox-laravel\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/mac/projects/blog/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/mac/projects/blog/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
