@@ -2,29 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Letter | A Responsive Email Template</title>
-    <!--
-
-    SALTED | A RESPONSIVE EMAIL TEMPLATE
-    =====================================
-
-    Based on code used and tested by Litmus (@litmusapp)
-    Originally developed by Kevin Mandeville (@KEVINgotbounce)
-    Cleaned up by Jason Rodriguez (@rodriguezcommaj)
-    Presented by A List Apart (@alistapart)
-
-    Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
-    It's highly recommended that you test using a service like Litmus and your own devices.
-
-    Enjoy!
-
- -->
+    <title>TapMixer | Letter</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <style type="text/css">
-        /* CLIENT-SPECIFIC STYLES */
-
         #outlook a {
             padding: 0;
         }
@@ -59,7 +41,10 @@
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
         }
-
+        a {
+            font-family: Roboto, sans-serif;
+            text-decoration: none
+        }
         /* Prevent WebKit and Windows mobile changing default text sizes */
 
         table,
@@ -142,15 +127,66 @@
                                 </td>
                             </tr>
                         </table>
-                        <table class="text-table responsive-table" style="margin: 50px">
+                        <table class="text-table responsive-table" style="margin: 0 50px">
                             <tr>
                                 <td>
-                                    <b style="font-size: 26px; font-weight: 600; font-family: Helvetica, Arial, sans-serif; color: #3E4245">Hello...</b>
-                                    <p style="font-size: 16px; font-weight: 400; font-family: Helvetica, Arial, sans-serif; color: #3E4245">You have successfully registered in TapMixer. Please confirm your email address to activate your TapMixer Account
+                                    <b style="font-size: 26px; font-weight: bold; font-family: Roboto, sans-serif; color: #3E4245;line-height: 1.6">Hello...</b>
+                                    <p style="font-size: 16px; font-weight: lighter; font-family: Roboto, sans-serif; color: #3E4245;line-height: 1.6">You have successfully registered in TapMixer. Please confirm your email address to activate your TapMixer Account
                                     </p>
                                 </td>
                             </tr>
                         </table>
+                        <table class="text-table responsive-table" style="width: 100%; margin: 15px 0 0 0">
+                            <tr>
+                                <td style="padding: 0 50px">
+                                    <table style="width: 100%">
+                                        <tr>
+                                            <td>
+                                                <a href="#"
+                                                   style="display: inline-block;
+                                                          width: 100%;
+                                                          background: #00BF66;
+                                                          padding: 15px 0;
+                                                          text-align: center;
+                                                          font-weight: 500;
+                                                          color: #fff">Confirm e-mail</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="text-table responsive-table" style="width: 100%; background-color: #F8F8FA; margin: 50px 0 0 0">
+                            <tr>
+                                <td style="padding: 0 50px">
+                                    <table style="width: 50%; margin: 20px 0">
+                                        <tr>
+                                            <td>
+                                                <a style="color: #3E93EC;font-weight: 300;font-size: 14px" href="#">Our blog</a>
+                                            </td>
+                                            <td>
+                                                <a style="color: #3E93EC;font-weight: 300;font-size: 14px" href="#">Support</a>
+                                            </td>
+                                            <td>
+                                                <a style="color: #3E93EC;font-weight: 300;font-size: 14px" href="#">Unsubscribe</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="600" style="margin:0;border-radius: 3px;" class="responsive-table">
+                <tr>
+                    <td style="padding: 0 50px">
+                        <p style="margin: 0">TapMixer Team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 50px">
+                        <p style="margin: 0">Did you recieve this message in error? Let us know you didn’t sign up for TapMixer and we won’t contact you again.</p>
                     </td>
                 </tr>
             </table>
